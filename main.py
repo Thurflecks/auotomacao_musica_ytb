@@ -1,15 +1,16 @@
 import pyautogui
 import time
 
+
 musica = input("qual a musica deseja ouvir? ")
 
 if musica =='':
     print('Você não digitou uma música')
     exit()
 
-pyautogui.PAUSE = 1
-pyautogui.press('win')
-pyautogui.write('Opera')
+pyautogui.PAUSE = 1.5
+pyautogui.hotkey("ctrl" + "alt"+ "t")
+pyautogui.write("brave-browser")
 pyautogui.press('enter')
 pyautogui.write('youtube.com')
 pyautogui.press('enter')
